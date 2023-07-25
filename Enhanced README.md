@@ -7,11 +7,9 @@
     <br>
 </div>
 
-![image](https://github.com/Sravanthgithub/anime-search-weaviate/assets/77894804/07375115-68a1-4722-944f-38071cff5eae)
-
-
 # Weaviate Anime Search Engine
 Welcome to the Weaviate Anime Search Engine! This anime search engine is powered by a deep neural network using Weaviate's vector database. It utilizes **ResNet50 (PyTorch)** as the vectorizer and retriever. Please note that currently, only PyTorch ResNet50 supports **CUDA-GPU**, but in a **single-threaded** manner. You can also use the **keras-based ResNet50 CPU** with **multi-threaded** inference.
+![image](https://github.com/Sravanthgithub/anime-search-weaviate/assets/77894804/07375115-68a1-4722-944f-38071cff5eae)
 
 ## How to Run
 Follow these steps to run the anime search engine:
