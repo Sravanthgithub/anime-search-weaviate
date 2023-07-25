@@ -2,11 +2,7 @@
     <div align="centre">
         <img alt='Weaviate logo' src='https://weaviate.io/img/site/weaviate-logo-light.png' width='240' align='centre' />
     </div>
-    <br>
-    <br>
-    <br>
 </div>
-
 # Weaviate Anime Search Engine
 Welcome to the Weaviate Anime Search Engine! This anime search engine is powered by a deep neural network using Weaviate's vector database. It utilizes **ResNet50 (PyTorch)** as the vectorizer and retriever. Please note that currently, only PyTorch ResNet50 supports **CUDA-GPU**, but in a **single-threaded** manner. You can also use the **keras-based ResNet50 CPU** with **multi-threaded** inference.
 
