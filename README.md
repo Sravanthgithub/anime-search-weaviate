@@ -1,5 +1,5 @@
 <div>
-    <div align="right">
+    <div align="centre">
         <img alt='Weaviate logo' src='https://weaviate.io/img/site/weaviate-logo-light.png' width='160' align='right' />
     </div>
     <br>
@@ -36,11 +36,6 @@ Follow these steps to run the image search engine:
 5. Navigate to the URL that Streamlit outputs and upload an image. The program will query Weaviate for a vectorized search of similar images. If you are running this in a local environment, the URL will be:
     ```
     http://127.0.0.1:8501/
-    ```
-
-6. (Optional) To handle CORS and XSRF protection in Streamlit, run this command if you encounter **Socket Errors** while connecting to the Streamlit app URL:
-    ```
-    streamlit run streamlit_app.py --server.enableCORS false --server.enableXsrfProtection false
     ```
 
 ## Images
