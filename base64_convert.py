@@ -27,7 +27,7 @@ if os.path.exists(base_folder):
     shutil.rmtree(base_folder)
 os.mkdir(base_folder)
 
-img_to_b64()
+image_to_base64()
 
 print("Done")
 
