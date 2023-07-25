@@ -1,5 +1,5 @@
 <div>
-    <div align="right">
+    <div align="centre">
         <img alt='Weaviate logo' src='https://weaviate.io/img/site/weaviate-logo-light.png' width='240' align='centre' />
     </div>
     <br>
