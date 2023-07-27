@@ -9,6 +9,14 @@ Welcome to the Weaviate Anime Search Engine! This anime search engine is powered
 
 ![image](https://github.com/Sravanthgithub/anime-search-weaviate/assets/77894804/35110b5b-9946-4f6f-a242-c58e10d47ca4)
 
+## Architechture
+![image](https://github.com/Sravanthgithub/anime-search-weaviate/assets/77894804/c7b9472c-8d7c-480b-aa9a-64ba360da4df)
+
+## Backend
+![image](https://github.com/Sravanthgithub/anime-search-weaviate/assets/77894804/438c813d-0be9-4703-8a99-88c886c0f958)
+
+
+
 
 ## How to Run
 Follow these steps to run the anime search engine:
@@ -104,6 +112,9 @@ services:
       ENABLE_CUDA: '0'
 ...
 ```
+## Results
+![image](https://github.com/Sravanthgithub/anime-search-weaviate/assets/77894804/749a66e1-e258-4d64-b571-b8287201d71c)
+
 
 
 
