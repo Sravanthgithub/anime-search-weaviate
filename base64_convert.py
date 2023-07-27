@@ -1,8 +1,9 @@
 import os
 import base64
 from pathlib import Path
+import shutil
 
-def imgage_to_base64():
+def image_to_base64():
     """
     Convert images to base64
     """
@@ -30,5 +31,3 @@ os.mkdir(base_folder)
 image_to_base64()
 
 print("Done")
-
-

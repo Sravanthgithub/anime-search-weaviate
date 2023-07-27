@@ -3,12 +3,12 @@
 set -eou pipefail
 
 # Give services time to start
-sleep 10
+sleep 5
 
-python3 schema.py
+python schema.py
 
-python3 base64_convert.py
+python base64_convert.py
 
-python3 upload_img.py
+python upload_img.py
 
 streamlit run streamlit_app.py

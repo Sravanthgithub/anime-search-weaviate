@@ -21,6 +21,7 @@ def search_similar_images(img_str):
 def display_similar_images(similar_images):
     if not similar_images:
         st.warning("No similar images found in the database. Please upload something else.")
+        print("No similar images found in the database. Please upload something else.")
     else:
         images = [base64.b64decode(result.get("image")) for result in similar_images]
 
@@ -44,8 +45,9 @@ def main():
         st.markdown("---")
 
         # Convert the uploaded image to a base64 string
-        bytes_data = uploaded_img.read()
-        img_str = base64.b64encode(bytes_data).decode()
+        with BytesIO() as output:
+            img_pil.save(output, format="PNG")
+            img_str = base64.b64encode(output.getvalue()).decode("utf-8")
 
         # Search for similar images
         similar_images = search_similar_images(img_str)
@@ -53,6 +55,24 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+
+def testing(path):
+    #convert image to base64
+    file_path = path
+    with open(file_path, "rb") as f:
+        image_data = f.read()
+    b64_data = base64.b64encode(image_data).decode("utf-8")
+    
+    img_str = b64_data
+
+    print(len(img_str))
+
+    #search for similar images
+    similar_images = search_similar_images(img_str)
+    display_similar_images(similar_images)
+
+    return similar_images
 
 
-
+    
